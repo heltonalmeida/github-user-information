@@ -1,0 +1,12 @@
+<label>
+    {{ label }}
+    <span class="required-label" *ngIf="requiredLabel"> *</span>
+</label>
+
+<input 
+    [type]="type" 
+    [disabled]="disabled"
+    [placeholder]="placeholder" 
+    [maxlength]="maxlength" 
+    [(ngModel)]="value" 
+    [class]="inputClass">
